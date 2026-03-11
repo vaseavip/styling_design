@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DavasStudio | Web Development & AWS Cloud</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold d-flex align-items-center"
+          href="#hero"
+          onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+        >
+          <img
+            src="./img/logo.png"
+            alt="DavasStudio Logo"
+            class="navbar-logo me-2"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero" id="hero">
+      <div class="container h-100">
+        <div class="row align-items-center h-100">
+          <div class="col-lg-6 fade-in">
+            <h1>Modern Web Development & AWS Cloud Solutions</h1>
+            <p class="lead mt-3">
+              DavasStudio helps companies build scalable web applications and
+              reliable cloud infrastructure. Our expert team of developers and
+              cloud architects is ready to transform your ideas into powerful
+              digital solutions.
+            </p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-4"
+              >Start a Project</a
+            >
+          </div>
+          <div class="col-lg-6 text-center fade-in">
+            <img
+              src="./img/photo-1555066931-4365d14bab8c.jpg"
+              class="img-fluid rounded"
+              alt="DavasStudio Solutions"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container text-center">
+        <h2 class="mb-5">Our Services</h2>
+        <div class="row g-4">
+          <div class="col-md-4 col-sm-6 fade-in">
+            <div class="card-blur p-4 h-100">
+              <div class="service-icon"><i class="fas fa-code"></i></div>
+              <h4>Web Development</h4>
+              <p>
+                Custom websites and web applications built using modern
+                frameworks and scalable architectures.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 fade-in">
+            <div class="card-blur p-4 h-100">
+              <div class="service-icon"><i class="fas fa-cloud"></i></div>
+              <h4>AWS Cloud</h4>
+              <p>
+                Deployment, infrastructure automation, cloud architecture and
+                scalable AWS environments.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 fade-in">
+            <div class="card-blur p-4 h-100">
+              <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+              <h4>Maintenance & Support</h4>
+              <p>
+                Continuous monitoring, updates, security improvements and
+                long‑term technical support.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6 fade-in">
+            <img
+              src="./img/photo-1454165804606-c3d57bc86b40.jpg"
+              class="img-fluid rounded"
+            />
+          </div>
+
+          <div class="col-lg-6 fade-in">
+            <h2>About DavasStudio</h2>
+            <p class="mt-3">
+              DavasStudio is a modern IT studio focused on developing high
+              quality web applications and cloud based solutions. We combine
+              strong engineering with modern design to create fast, scalable and
+              secure digital products.
+            </p>
+            <p>
+              Our expertise includes full‑stack development, cloud architecture
+              and automation in AWS.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="text-center mb-5">Our Team</h2>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-5 col-lg-4 fade-in">
+            <div class="team-card-blur">
+              <img
+                src="./img/photo-1461749280684-dccba630e2f6.jpg"
+                class="img-fluid rounded-top"
+                alt="Team Member"
+              />
+              <div class="team-info p-4">
+                <h4>Alex Davas</h4>
+                <p class="text-info mb-3">Full Stack Developer & Co-Founder</p>
+                <p class="small mb-3">
+                  Passionate about building scalable web applications with
+                  modern technologies. Expert in React, Node.js, and AWS cloud
+                  architecture.
+                </p>
+                <div class="social-links">
+                  <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    title="LinkedIn"
+                    class="social-btn"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    title="Instagram"
+                    class="social-btn"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="https://github.com"
+                    target="_blank"
+                    title="GitHub"
+                    class="social-btn"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 col-lg-4 fade-in">
+            <div class="team-card-blur">
+              <img
+                src="./img/photo-1498050108023-c5249f4df085.jpg"
+                class="img-fluid rounded-top"
+                alt="Team Member"
+              />
+              <div class="team-info p-4">
+                <h4>Maria Studio</h4>
+                <p class="text-info mb-3">Cloud Architect & Co-Founder</p>
+                <p class="small mb-3">
+                  Specialized in AWS cloud solutions and infrastructure
+                  automation. Dedicated to creating secure and efficient cloud
+                  environments.
+                </p>
+                <div class="social-links">
+                  <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    title="LinkedIn"
+                    class="social-btn"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    title="Instagram"
+                    class="social-btn"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="https://github.com"
+                    target="_blank"
+                    title="GitHub"
+                    class="social-btn"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <div class="container text-center">
+        <h2 class="mb-5">Recent Projects</h2>
+
+        <div class="row g-4 portfolio">
+          <div class="col-md-4 col-sm-6 fade-in">
+            <div class="portfolio-item">
+              <img
+                src="./img/photo-1461749280684-dccba630e2f6.jpg"
+                class="img-fluid"
+              />
+              <div class="portfolio-overlay">
+                <a href="#" class="portfolio-btn demo-btn" title="Live Demo">
+                  <i class="fas fa-play"></i>
+                </a>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  class="portfolio-btn github-btn"
+                  title="View Code"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 fade-in">
+            <div class="portfolio-item">
+              <img
+                src="./img/photo-1498050108023-c5249f4df085.jpg"
+                class="img-fluid"
+              />
+              <div class="portfolio-overlay">
+                <a href="#" class="portfolio-btn demo-btn" title="Live Demo">
+                  <i class="fas fa-play"></i>
+                </a>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  class="portfolio-btn github-btn"
+                  title="View Code"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 fade-in">
+            <div class="portfolio-item">
+              <img
+                src="./img/photo-1504639725590-34d0984388bd.jpg"
+                class="img-fluid"
+              />
+              <div class="portfolio-overlay">
+                <a href="#" class="portfolio-btn demo-btn" title="Live Demo">
+                  <i class="fas fa-play"></i>
+                </a>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  class="portfolio-btn github-btn"
+                  title="View Code"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container text-center">
+        <h2>Contact Us</h2>
+        <p class="mb-4">Let's build something great together.</p>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-6 fade-in">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Name" />
+              </div>
+
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email" />
+              </div>
+
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+
+              <button class="btn btn-primary w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4 mb-3">
+            <h5>DavasStudio</h5>
+            <p>Web Development & AWS Cloud Solutions</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Projects</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Follow Us</h5>
+            <div class="social-links">
+              <a href="https://linkedin.com" target="_blank" class="social-btn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="social-btn"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://github.com" target="_blank" class="social-btn">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <p class="text-center mb-0">
+          &copy; 2026 DavasStudio. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
