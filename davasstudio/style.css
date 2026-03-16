@@ -33,9 +33,9 @@ body {
 }
 
 .navbar-logo {
-  height: 45px;
+  height: 55px;
   width: auto;
-  max-width: 50px;
+  max-width: 60px;
   object-fit: contain;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -98,6 +98,31 @@ body {
   padding-top: 80px;
   position: relative;
   overflow: hidden;
+}
+
+/* styling for call-to-action inside hero */
+.hero .btn-primary {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  border: none;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+}
+
+.hero .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.4);
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+}
+
+@media (max-width: 768px) {
+  .hero .btn-primary {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 .hero-slider {
@@ -296,11 +321,39 @@ body {
   background: rgba(30, 41, 59, 0.6);
 }
 
+.team-photo {
+  position: relative;
+  overflow: hidden;
+}
+
 .team-card-blur img {
   width: 100%;
   height: 350px;
   object-fit: cover;
   object-position: center top;
+  display: block;
+}
+
+.team-cta {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.95);
+  opacity: 0;
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+  pointer-events: none;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+.team-photo:hover .team-cta {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: auto;
 }
 
 .team-info {
@@ -324,6 +377,11 @@ body {
   margin-top: 15px;
 }
 
+/* when inside header row, remove extra top margin */
+.team-header .social-links {
+  margin-top: 0;
+}
+
 .social-btn {
   display: inline-flex;
   align-items: center;
@@ -337,6 +395,37 @@ body {
   transition: all 0.3s ease;
   border: 1px solid rgba(56, 189, 248, 0.4);
   font-size: 0.9rem;
+}
+
+/* additional layout for team cards */
+.team-header {
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+
+.team-header h4 {
+  margin: 0;
+}
+
+.skills i {
+  font-size: 1.25rem;
+  color: #38bdf8;
+  margin-right: 0.6rem;
+  vertical-align: middle;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background: rgba(56, 189, 248, 0.1);
+  color: #38bdf8;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.85rem;
 }
 
 .social-btn:hover {
@@ -569,7 +658,7 @@ body {
   }
 
   .team-card-blur img {
-    height: 200px;
+    height: 300px;
   }
 }
 
@@ -621,6 +710,10 @@ body {
 
   .portfolio-item img {
     height: 250px;
+  }
+
+  .team-card-blur img {
+    height: 380px;
   }
 
   h2 {

@@ -1,0 +1,158 @@
+/* Page-specific styles for Vasile */
+.btn {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  border: none;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+}
+
+.btn :hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.4);
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+}
+
+.vasile-page-hero {
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.vasile-page-hero h1 {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  line-height: 1.1;
+}
+
+.vasile-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.vasile-skill-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.15);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  color: #e5e7eb;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.25s ease;
+}
+
+.vasile-skill-pill:hover {
+  background: rgba(56, 189, 248, 0.25);
+  transform: translateY(-1px);
+}
+
+.vasile-highlight-list {
+  margin-top: 0.75rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.vasile-highlight-list li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 10px;
+  color: rgba(229, 231, 235, 0.9);
+}
+
+.vasile-highlight-list li::before {
+  content: '\2022';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #38bdf8;
+}
+
+.vasile-resume-item h4 {
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+.vasile-resume-item p {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.vasile-project-card {
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 16px;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.vasile-project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 45px rgba(56, 189, 248, 0.25);
+}
+
+.vasile-project-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.vasile-project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.vasile-project-card:hover .vasile-project-image img {
+  transform: scale(1.08);
+}
+
+.vasile-project-content {
+  padding: 1.25rem 1.25rem 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.vasile-project-content h5 {
+  margin-bottom: 0.75rem;
+}
+
+.vasile-project-content p {
+  flex: 1;
+  color: rgba(229, 231, 235, 0.85);
+}
+
+.vasile-project-content .btn {
+  width: fit-content;
+}
+
+@media (max-width: 768px) {
+  .vasile-page-hero {
+    padding-top: 90px;
+  }
+
+  .vasile-project-image {
+    height: 200px;
+  }
+}
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); /* Safari / iOS */
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
