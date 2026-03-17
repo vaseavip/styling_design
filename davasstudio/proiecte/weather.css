@@ -1,0 +1,121 @@
+.mylogo {
+  height: 40px;
+  width: auto;
+  max-width: 60px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.mylogo:hover {
+  transform: scale(1.1) rotateZ(5deg);
+  filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.6));
+}
+
+.weather-header {
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: var(--shadow);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.weather-main {
+  padding-top: 6.5rem;
+  padding-bottom: 6.5rem;
+}
+
+.weather-card {
+  background: var(--surface);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+}
+
+.weather-title {
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.weather-result {
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 1.3rem 1.4rem;
+  border: 1px solid var(--border);
+}
+
+.weather-icon {
+  width: 70px;
+  height: 70px;
+  background: rgba(64, 123, 255, 0.12);
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+
+.weather-stat {
+  padding: 0.65rem 0.8rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.weather-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.weather-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+#check-btn {
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+#check-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 22px rgba(64, 123, 255, 0.35);
+}
+
+@media (max-width: 576px) {
+  .weather-card {
+    padding: 1.8rem 1.2rem;
+  }
+
+  .weather-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+}
